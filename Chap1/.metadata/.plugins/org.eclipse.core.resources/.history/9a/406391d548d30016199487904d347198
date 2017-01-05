@@ -1,0 +1,7 @@
+
+public class StringProcessing {
+	public static void main(String[] args) {
+		String s = "Write a Java program is very easy";
+		
+	}
+}

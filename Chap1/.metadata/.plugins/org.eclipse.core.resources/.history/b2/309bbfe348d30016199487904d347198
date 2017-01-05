@@ -1,0 +1,11 @@
+
+public class StringProcessing {
+	public static void main(String[] args) {
+		String s = "Write a Java program is very easy";
+
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if(s.charAt(i) == 'a') count++;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class QuadEquation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double a,b,c,x1,x2,delta;
+		
+		Scanner sc = new Scanner(System.in);
+		
+	    System.out.print("Nhập hệ số a, b, c: ");
+	    a = sc.nextDouble();
+	    b = sc.nextDouble();
+	    c = sc.nextDouble();
+	    
+	    delta = Math.pow(b, 2.0);
+	    System.out.println(delta);
+	}
+
+}

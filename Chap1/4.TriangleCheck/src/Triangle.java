@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Triangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		double a, b, c;
+
+		System.out.println("Nhập số đo 3 cạnh của tam giác: ");
+		a = sc.nextDouble();
+		b = sc.nextDouble();
+		c = sc.nextDouble();
+
+		if ((a + b > c) && (a + c > b) && (b + c > a)) {
+			if (a == b && b == c)
+				System.out.println("Tam giác đều");
+			else if (a == b || b == c || a == c) {
+				if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
+					System.out.println("Tam giác vuông cân");
+				else
+					System.out.println("Tam giác cân");
+			} else if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
+				System.out.println("Tam giác vuông");
+			else
+				System.out.println("Tam giác thường");
+		} else
+			System.out.println("Không phải là tam giác");
+		sc.close();
+	}
+
+}

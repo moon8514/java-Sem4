@@ -1,0 +1,10 @@
+INDEX VERSION 1.129+F:\Tut\Java\BTLapTrinhJavaCoBan\Chap1\.metadata\.plugins\org.eclipse.jdt.core
+608280653.index
+4183976415.index
+1032797806.index
+501140417.index
+2860127973.index
+3205334126.index
+3067544458.index
+2222642800.index
+1116064756.index
