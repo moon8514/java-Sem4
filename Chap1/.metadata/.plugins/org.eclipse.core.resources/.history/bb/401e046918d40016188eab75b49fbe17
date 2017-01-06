@@ -1,0 +1,21 @@
+
+public class _7_StringProcessing_Again {
+
+	public static int countJava(String s){
+		int ans = 0;
+		while(s.indexOf("Java") != -1){
+			s.replaceFirst("Java", "");
+			System.out.println(s);
+			ans++;
+		}
+		return ans;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "Java ha Java really Java jav Java java";
+		System.out.println("Số từ \"Java\" có trong chuối: " + countJava(str));
+		
+	}
+
+}
