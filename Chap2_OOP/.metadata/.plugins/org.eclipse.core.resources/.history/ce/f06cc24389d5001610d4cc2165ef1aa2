@@ -1,0 +1,63 @@
+import java.util.Scanner;
+import java.util.Vector;
+
+public class StudentManagement {
+	
+	Vector list = new Vector();
+	public StudentManagement(){
+		while(true){
+			System.out.println("*-CHƯƠNG TRÌNH QUẢN LÝ SINH VIÊN-*");
+			System.out.println("*-Chức năng chính chương trình-*");
+			System.out.println(" 1. Nhập danh sách sinh viên");
+			System.out.println(" 2. Xem danh sách sinh viên");
+			System.out.println(" 3. Sắp xếp danh sách sinh viên tăng dần theo điểm trung bình");
+			System.out.println(" 4. Tìm sinh viên theo tên");
+			System.out.println(" 5. Thoát");
+			System.out.println(" -----------------");
+		
+			int num;
+			Scanner sc = new Scanner(System.in);
+			System.out.print("  Nhập một số để chọn chức năng: ");
+			num = sc.nextInt();
+			
+		}
+	}
+}
+
+class Student implements Comparable{
+	
+	private int id;
+	private String name;
+	private double avg;
+	
+	public Student(){
+		id = 0;
+		name = new String("");
+		avg = 0.0;
+	}
+	
+	public Student(int id, String name, double avg){
+		this.id = id;
+		this.name = new String(name);
+		this.avg = avg;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public double getAvg() {
+		return avg;
+	}
+
+	@Override
+	public int compareTo(Object other) {
+		// TODO Auto-generated method stub
+		Student o = (Student) other;
+		return (int) (this.avg - o.avg);
+	}
+}

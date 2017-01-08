@@ -1,0 +1,19 @@
+
+public class RectangleSort {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	abstract class Shape{
+		abstract double area();
+		
+		public String toString(){
+			return "area = " + area();
+			
+		}
+	}
+}

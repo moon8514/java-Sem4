@@ -1,0 +1,42 @@
+
+public class StudentManagement {
+	
+	
+	
+}
+
+class Student implements Comparable{
+	
+	private int id;
+	private String name;
+	private double avg;
+	
+	public Student(){
+		id = 0;
+		name = new String("");
+		avg = 0.0;
+	}
+	
+	public Student(int id, String name, double avg){
+		this.id = id;
+		this.name = new String(name);
+		this.avg = avg;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public double getAvg() {
+		return avg;
+	}
+	
+
+	public int compareTo(Student other){
+		return (int)(this.avg - other.avg);
+	}
+}

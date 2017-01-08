@@ -1,0 +1,48 @@
+
+public class RectangleSort {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Rectangle vec[];
+		vec = new Rectangle[10];
+		
+		double randomWidth = 0, randomHeight = 0;
+		for(int i = 0; i < vec.length; i++){
+		
+			float randomWidth = (float) (Math.random() * 100);
+			float randomHeight = (float) (Math.random() * 100);
+			vec[i] = new Rectangle(randomWidth, randomHeight);
+		
+		}
+		
+	}
+
+	abstract class Shape{
+		abstract double area();
+		
+		public String toString(){
+			return "area = " + area();
+			
+		}
+	}
+	
+	class Rectangle extends Shape{
+		
+		float width;
+		float height;
+		
+		
+		public Rectangle(float width, float height) {
+			this.width = width;
+			this.height = height;
+		}
+
+		@Override
+		double area() {
+			return width*height;
+		}
+		
+	}
+}
