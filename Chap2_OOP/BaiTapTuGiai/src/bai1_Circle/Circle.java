@@ -1,0 +1,39 @@
+package bai1_Circle;
+
+public class Circle {
+
+	private float rad;
+	
+	public float getRad() {
+		return rad;
+	}
+
+	public void setRad(float rad) {
+		this.rad = rad;
+	}
+
+	public Circle(){
+		this.rad = 0;
+	}
+	
+	public Circle(float rad){
+		this.rad = rad;
+	}
+	
+	public float area(){
+		return (float) Math.PI*rad*rad;
+	}
+	
+	public float perimeter(){
+		return (float) Math.PI*2*rad;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle c = new Circle(5);
+		System.out.println("Bán kính hình tròn: " + c.getRad());
+		System.out.println("Chu vi hình tròn: " + String.format("%.2f", c.perimeter() ));
+		System.out.println("Diện tích hình tròn : " + String.format("%.2f", c.area() ));
+	}
+
+}

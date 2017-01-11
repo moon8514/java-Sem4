@@ -1,0 +1,37 @@
+package bai6_Fraction;
+
+public class Fraction {
+	private int numerator, denominator;
+	
+	public Fraction() {
+		numerator = 0;
+		denominator = 1;
+	}
+	
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+		reduce();
+	}
+	
+	private int GCD(int a, int b) {
+		int temp;
+		while(b > 0) {
+			temp = a % b;
+			a = b;
+			b = temp;
+		}
+		return a;
+	}
+	
+	public void reduce() {
+		int MSC = GCD(numerator, denominator);
+		numerator /= MSC;
+		denominator /= MSC;
+	}
+	
+	public void add(Fraction f1, Fraction f2) {
+		if()
+	}
+	
+}

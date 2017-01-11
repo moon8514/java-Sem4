@@ -1,0 +1,22 @@
+package bai1;
+
+public class Circle {
+
+	private float rad;
+	
+
+	public Circle(){
+		this.rad = 0;
+	}
+	
+	public Circle(double rad){
+		this.rad = rad;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

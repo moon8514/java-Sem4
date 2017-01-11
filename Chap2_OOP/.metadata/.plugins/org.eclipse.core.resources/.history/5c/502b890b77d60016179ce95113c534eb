@@ -1,0 +1,33 @@
+package bai1;
+
+public class Circle {
+
+	private float rad;
+	
+	public float getRad() {
+		return rad;
+	}
+
+	public void setRad(float rad) {
+		this.rad = rad;
+	}
+
+	public Circle(){
+		this.rad = 0;
+	}
+	
+	public Circle(float rad){
+		this.rad = rad;
+	}
+	
+	public float area(){
+		return (float) Math.PI*rad*rad;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

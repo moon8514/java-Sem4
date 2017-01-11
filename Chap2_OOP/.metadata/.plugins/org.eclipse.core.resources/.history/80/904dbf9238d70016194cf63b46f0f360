@@ -1,0 +1,61 @@
+package bai4_Triangle;
+
+public class Triangle {
+	float a,b,c;
+
+	public Triangle() {
+		a = b = c = 0f;
+	}
+	
+	public Triangle(float a, float b, float c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	
+	public boolean isTriangle() {
+		if(a + b > c && a + c > b && b + c > a) return true;
+		else return false;
+	}
+	
+	public boolean isEquilateral() {
+		if(a == b && a == c) return true;
+		else return false;
+	}
+
+	public boolean isIsosceles() {
+		if(a == b || b == c || a == c) return true;
+		else return false;
+	}
+	
+	public boolean isRight() {
+		if(a*a + b*b == c*c || c*c + b*b == a*a || a*a + c*c == b*b) return true;
+		else return false;
+	}
+	
+	public boolean isRightIsosceles() {
+		if(isIsosceles() && isRight()) return true;
+		else return false;
+	}
+	
+	public String getType() {
+		if(isTriangle()) {
+			if(this.isEquilateral()) return "Equilateral";
+			else if(this.isRightIsosceles()) return "RightIsosceles";
+			else if(this.isRight()) return "Right";
+			else if(this.isIsosceles()) return "Isosceles";
+			else return "Normal";	
+		} else return "Not a triangle";
+	}
+	
+	public float area() {
+		float s = (a + b + c)/2;
+		return (float) Math.sqrt(s*(s-a)*(s-b)*(s-c));
+	}
+	
+	public void display() {
+		System.out.println("a = " + a);
+		System.out.println("b = " + a);
+		System.out.println("c = " + a);
+	}
+}

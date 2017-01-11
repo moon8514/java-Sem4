@@ -1,0 +1,14 @@
+package bai2_MyMath;
+
+public class MyMath {
+	
+	public static int comDiv(int a, int b){
+		int temp;
+		while(a > 0){
+			temp = a % b;
+			a = b;
+			b = temp;
+		}
+	}
+	
+}

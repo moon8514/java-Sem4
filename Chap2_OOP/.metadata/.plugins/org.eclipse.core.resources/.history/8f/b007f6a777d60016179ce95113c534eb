@@ -1,0 +1,9 @@
+package bai2_MyMath;
+
+public class MyMath {
+	
+	public static int comDiv(int a, int b){
+		
+	}
+	
+}

@@ -1,0 +1,25 @@
+package bai6_Fraction;
+
+public class Fraction {
+	int numerator, denominator;
+	
+	public Fraction() {
+		numerator = 0;
+		denominator = 1;
+	}
+	
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+	}
+	
+	private static int GCD(int a, int b) {
+		int temp;
+		while()
+	}
+	
+	public void reduce() {
+		
+	}
+	
+}
